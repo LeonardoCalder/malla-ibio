@@ -1,0 +1,75 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d6f8f5;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.malla {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  justify-content: start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.semestre {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ramo {
+  background-color: #66d9cc;
+  color: #00332e;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid #00332e;
+  transition: 0.3s;
+}
+
+.ramo:disabled {
+  background-color: #c6f5f0;
+  color: #999;
+  border: 2px solid #a3d9d4;
+  cursor: not-allowed;
+}
+
+.ramo.aprobado {
+  background-color: #1abc9c;
+  color: white;
+}
+
+#progreso-container {
+  margin-top: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  background-color: #dcd6f8;
+  border-radius: 20px;
+  position: relative;
+  border: 1px solid #66d9cc;
+}
+
+#barra-progreso {
+  height: 100%;
+  background-color: #66d9cc;
+  width: 0%;
+  border-radius: 20px;
+  transition: width 0.5s;
+}
+
+#texto-progreso {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  line-height: 30px;
+  font-weight: bold;
+  color: #00332e;
+}
