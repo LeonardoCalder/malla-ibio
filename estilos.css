@@ -1,20 +1,34 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   background-color: #e0fdfc;
-  color: #033;
-  padding: 20px;
   margin: 0;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #066;
+  color: #044;
 }
 
-.malla {
+#malla {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.semestre {
+  border-top: 2px solid #088;
+  padding-top: 10px;
+}
+
+.semestre h2 {
+  color: #055;
+  margin: 0 0 10px 0;
+}
+
+.semestre .ramos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
 }
 
@@ -27,7 +41,7 @@ h1 {
   text-align: center;
   cursor: pointer;
   opacity: 0.6;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
   user-select: none;
 }
 
@@ -47,3 +61,31 @@ h1 {
   cursor: not-allowed;
 }
 
+#progreso-container {
+  width: 100%;
+  background-color: #cce;
+  border: 1px solid #088;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  position: relative;
+}
+
+#progreso-barra {
+  background-color: #33d1b4;
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+#progreso-texto {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  line-height: 30px;
+  font-weight: bold;
+  color: #033;
+}
