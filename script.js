@@ -1,28 +1,4 @@
 const ramos = {
-  'Semestre 0': [
-    { codigo: 'FFIS', nombre: 'Fundamentos de Física', prerequisitos: [] },
-    { codigo: 'FQUIR', nombre: 'Fundamentos de Química', prerequisitos: [] },
-    { codigo: 'FBICR', nombre: 'Fundamentos de Biología', prerequisitos: [] },
-    { codigo: 'PREM', nombre: 'Precálculo', prerequisitos: [] },
-    { codigo: 'AGEO', nombre: 'Análisis Geométrico', prerequisitos: [] },
-    { codigo: 'COMBR', nombre: 'Competencia Comunicativa Básica', prerequisitos: [] }
-  ],
-  'Semestre I': [
-    { codigo: 'ALLI', nombre: 'Álgebra Lineal', prerequisitos: ['PREM', 'AGEO'] },
-    { codigo: 'QUIGR', nombre: 'Química General', prerequisitos: ['FQUIR'] },
-    { codigo: 'CALD', nombre: 'Cálculo Diferencial', prerequisitos: ['PREM', 'AGEO'] },
-    { codigo: 'IIBMR', nombre: 'Ingeniería Biomédica', prerequisitos: [] },
-    { codigo: 'EGR1', nombre: 'Expresión Gráfica 1', prerequisitos: ['AGEO'] },
-    { codigo: 'DEPD', nombre: 'Deporte Dirigido', prerequisitos: [] }
-  ],
-  'Semestre II': [
-    { codigo: 'FIMF', nombre: 'Física Mecánica y Fluidos', prerequisitos: ['ALLI', 'CALD'] },
-    { codigo: 'CALI', nombre: 'Cálculo Integral', prerequisitos: ['CALD'] },
-    { codigo: 'BICMR', nombre: 'Biología Celular y Molecular', prerequisitos: ['FBICR'] },
-    { codigo: 'BIQMR', nombre: 'Bioquímica', prerequisitos: ['QUIGR'] },
-    { codigo: 'CMCAR', nombre: 'Competencia Comunicativa', prerequisitos: ['COMBR'] }
-  ]
-const ramos = {
   "Semestre 0": [
     { codigo: "FFIS", nombre: "Fundamentos de Física", prerequisitos: [] },
     { codigo: "FQUIR", nombre: "Fundamentos de Química", prerequisitos: [] },
